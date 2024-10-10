@@ -13,13 +13,11 @@ const Router = (): JSX.Element => {
     <Routes>
       <Route path="*" element={<Error />} />
       <Route path="/" element={<Index />} />
-      <Route path="/" element={<Cart />} />
+      <Route path="/cart" element={<Cart />} />
       <Route path="/fashion" element={<Fashion />} />
       <Route path="/accessory" element={<Accessory />} />
       <Route path="/digital" element={<Digital />} />
       <Route path="/product/:id" element={<ProductsLoad />} />
-
-      {/* 라우팅 추가 해보세요. */}
     </Routes>
   );
 };
