@@ -97,7 +97,7 @@ const CartView = (): JSX.Element => {
       <div className="lg:flex justify-between mb-20">
         <CartList cartItems={getCart} itemCounts={itemCounts} onItemCountChange={handleItemCountChange} />
         <div className="self-start shrink-0 flex items-center mt-10 mb-20">
-          <span className="text-xl md:text-2xl">총: ${totalPrice.toFixed(2)}</span>
+          <span className="text-xl md:text-2xl">총: ${totalPrice}</span>
           <label htmlFor="confirm-modal" className="modal-button btn btn-primary ml-5">
             구매하기
           </label>
